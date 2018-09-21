@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Layout Cleiton</string>
+    <string name="text_main_email">Email</string>
+    <string name="text_name">Nome</string>
+    <string name="text_add_email">Email</string>
+    <string name="text_main_telephone">Telefone</string>
+    <string name="text_add_telephone">Adicionar Telefone</string>
+    <string name="text_receive_notifications">Receber Notificações</string>
+    <string name="text_email">E-mail</string>
+    <string name="text_telephone">Telefone</string>
+    <string name="text_clear">Limpar</string>
+    <string name="text_save">Salvar</string>
+    <string-array name="telephone_type">
+        <item>Fixo</item>
+        <item>Celular</item>
+    </string-array>
+    <string-array name="email_type">
+        <item>Pessoal</item>
+        <item>Comercial</item>
+    </string-array>
+</resources>

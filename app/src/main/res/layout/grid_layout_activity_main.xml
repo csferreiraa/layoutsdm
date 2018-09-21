@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:rowCount="7"
+    android:columnCount="4">
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="18sp"
+        android:layout_row="0"
+        android:layout_column="0"/>
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"/>
+
+    <TextView
+        android:id="@+id/text_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="18sp"
+        android:layout_row="1"
+        android:layout_column="0"/>
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"/>
+
+    <TextView
+        android:id="@+id/text_view_telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="18sp"
+        android:layout_row="2"
+        android:layout_column="0"/>
+
+    <EditText
+        android:id="@+id/edit_text_telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"/>
+
+    <CheckBox
+        android:id="@+id/check_box_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receber notificações"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"/>
+
+    <RadioGroup
+        android:id="@+id/rg_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill_horizontal">
+        <RadioButton
+            android:id="@+id/rb_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"/>
+        <RadioButton
+            android:id="@+id/rb_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="limparFormulario"
+        android:text="Limpar"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_row="6"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"/>
+
+</GridLayout>
